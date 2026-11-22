@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#020b05"/>
+      <stop offset="100%" stop-color="#071b0c"/>
+    </linearGradient>
+    <pattern id="grid" width="35" height="35" patternUnits="userSpaceOnUse">
+      <path d="M35 0H0V35" fill="none" stroke="#00ff41" stroke-opacity=".12"/>
+    </pattern>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="300" fill="url(#bg)"/>
+  <rect width="1200" height="300" fill="url(#grid)"/>
+  <g fill="#00ff41" opacity=".4" font-family="monospace" font-size="16">
+    <text x="40" y="45">01001000 01000001 01000011 01001011</text>
+    <text x="850" y="75">01010011 01000101 01000011</text>
+    <text x="65" y="250">SYSTEM ONLINE_</text>
+    <text x="900" y="255">ACCESS GRANTED</text>
+  </g>
+  <path d="M0 95H1200M0 205H1200" stroke="#00ff41" stroke-opacity=".25"/>
+  <text x="600" y="145" text-anchor="middle" fill="#00ff41"
+        font-family="monospace" font-size="66" font-weight="bold"
+        filter="url(#glow)">YASIN-KIK</text>
+  <text x="600" y="180" text-anchor="middle" fill="#c5ffcf"
+        font-family="monospace" font-size="19">CYBERSECURITY • LINUX • PYTHON • OPEN SOURCE</text>
+  <text x="600" y="230" text-anchor="middle" fill="#00ff41"
+        font-family="monospace" font-size="14">[ LEARN • BUILD • SECURE ]</text>
+</svg>
